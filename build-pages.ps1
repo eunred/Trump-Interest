@@ -24,6 +24,10 @@ $html = @"
     .downloads { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; padding: 18px 0 26px; border-bottom: 1px solid #cbd5e1; }
     .download { display: inline-block; padding: 10px 16px; border-radius: 8px; background: #10233f; color: #fff; font-weight: 700; text-decoration: none; }
     .download.secondary { background: #a5292a; }
+    .ppt-preview { margin: 0 0 42px; }
+    .ppt-preview h2 { margin: 0 0 14px; border: 0; padding: 0; }
+    .ppt-frame { width: 100%; aspect-ratio: 16 / 9; border: 1px solid #cbd5e1; border-radius: 10px; background: #e2e8f0; }
+    .ppt-help { margin: 10px 0 0; color: #64748b; font-size: 14px; }
     table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
     th, td { padding: 10px 12px; border: 1px solid #cbd5e1; vertical-align: top; }
     th { background: #f1f5f9; }
@@ -38,6 +42,17 @@ $html = @"
       <a class="download" href="downloads/trump-korea-steel-report.md" download>MD 다운로드</a>
       <a class="download secondary" href="downloads/trump-korea-steel-report.pptx" download>PPT 다운로드</a>
     </nav>
+    <section class="ppt-preview" aria-labelledby="ppt-title">
+      <h2 id="ppt-title">PPT 보고서</h2>
+      <iframe
+        class="ppt-frame"
+        title="트럼프 Korea·Steel 분석 PPT"
+        src="https://view.officeapps.live.com/op/embed.aspx?src=https%3A%2F%2Feunred.github.io%2FTrump-Interest%2Fdownloads%2Ftrump-korea-steel-report.pptx"
+        loading="eager"
+        allowfullscreen>
+      </iframe>
+      <p class="ppt-help">미리보기가 열리지 않으면 위의 PPT 다운로드 버튼을 이용하면 된다.</p>
+    </section>
 $body
   </main>
 </body>
