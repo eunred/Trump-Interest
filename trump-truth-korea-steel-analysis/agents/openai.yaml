@@ -1,0 +1,4 @@
+interface:
+  display_name: "Trump Truth Korea and Steel"
+  short_description: "Analyze Trump Korea and steel Truths"
+  default_prompt: "Use $trump-truth-korea-steel-analysis to analyze Donald Trump Truth Social posts containing Korea or Steel."
