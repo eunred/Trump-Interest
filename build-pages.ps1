@@ -21,6 +21,9 @@ $html = @"
     h1 { border-bottom: 3px solid #b91c1c; padding-bottom: 16px; }
     h2 { margin-top: 44px; border-bottom: 1px solid #cbd5e1; padding-bottom: 8px; }
     a { color: #1d4ed8; }
+    .downloads { display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 32px; padding: 18px 0 26px; border-bottom: 1px solid #cbd5e1; }
+    .download { display: inline-block; padding: 10px 16px; border-radius: 8px; background: #10233f; color: #fff; font-weight: 700; text-decoration: none; }
+    .download.secondary { background: #a5292a; }
     table { display: block; width: 100%; overflow-x: auto; border-collapse: collapse; }
     th, td { padding: 10px 12px; border: 1px solid #cbd5e1; vertical-align: top; }
     th { background: #f1f5f9; }
@@ -31,6 +34,10 @@ $html = @"
 </head>
 <body>
   <main>
+    <nav class="downloads" aria-label="보고서 다운로드">
+      <a class="download" href="downloads/trump-korea-steel-report.md" download>MD 다운로드</a>
+      <a class="download secondary" href="downloads/trump-korea-steel-report.pptx" download>PPT 다운로드</a>
+    </nav>
 $body
   </main>
 </body>
